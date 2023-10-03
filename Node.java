@@ -1,3 +1,6 @@
+
+// JPSE, 10/2/23, RS with Github stuff, No Citations
+
 public class Node <T> {
     private Node parentNode;
     private Node childNode;
@@ -31,12 +34,14 @@ public class Node <T> {
         value = numVal;
     }
 
-    public void setParentNode(Node pNode){
+    public Node setParentNode(Node pNode){
         parentNode = pNode;
+        return pNode;
     }
 
-    public void setChildNode(Node cNode){
+    public Node setChildNode(Node cNode){
         childNode = cNode;
+        return cNode;
     }
 
     public boolean equals(Node inputNode){
